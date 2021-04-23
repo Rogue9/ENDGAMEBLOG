@@ -66,7 +66,7 @@ class Campaign(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     group_name=db.Column(db.String(100))
     setting=db.Column(db.String(100), nullable=False)
-# db.create_all()
+db.create_all()
 
 gravatar = Gravatar(app,
                     size=100,
@@ -262,4 +262,4 @@ def delete_post(post_id):
 
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1', port=5000)
+    app.run(host='0.0.0.0', port=5000)
