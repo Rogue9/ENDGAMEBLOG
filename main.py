@@ -13,7 +13,7 @@ from sqlalchemy import ForeignKey
 import smtplib
 import os
 EMAIL = "bulby37@gmail.com"
-PASSWORD = os.environ['EMAIL_PASS']
+PASSWORD = "U7)gEm3$.P@"
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
