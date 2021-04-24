@@ -264,7 +264,7 @@ def delete_post(post_id):
 @login_required
 @admin_only
 def delete_user(user_id):
-    user_to_delete = User.query.get(user_id)
+    user_to_delete = Comment.query.get(user_id)
     db.session.delete(user_to_delete)
     db.session.commit()
     return redirect(url_for('get_all_posts', current_user=current_user))
