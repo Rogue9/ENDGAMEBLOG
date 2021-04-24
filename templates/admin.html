@@ -30,6 +30,7 @@
     <h1>Comments</h1>
     {% for comment in all_comments %}
     <h2>{{comment.parent_post.title}} - {{comment.text}}</h2><a href="{{url_for('comment_purge', comment_id=comment.id) }}">✘</a>
+    {% endfor %}
   </div>
   <hr>
 
