@@ -1,0 +1,36 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1475319122043-5ca9eeceefaf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Admin Panel</h1>
+            <span class="subheading">Adventurer's Journal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+  <h1>Users</h1>
+    {% for user in all_users}
+    <h2>{{user.email}} {{user.name}} </h2><a href="{{url_for('user_purge', user_id=user.id)}}">✘</a>
+    {% endfor %}
+    <hr>
+    <h1>Posts</h1>
+    {% for post in all_posts %}
+    <h2>{{post.title}} {{post.author}}</h2><a href="{{url_for('delete_post', post_id=post.id) }}">✘</a>
+    {% endfor %}
+    <hr>
+    <h1>Comments</h1>
+    {% for comment in all_comments %}
+    <h2>{{comment.parent_post.title}} - {{comment.text}}</h2><a href="{{url_for('comment_purge', comment_id=comment.id) }}">✘</a>
+  </div>
+  <hr>
+
+{% include "footer.html" %}
