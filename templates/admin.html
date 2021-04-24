@@ -24,7 +24,7 @@
     <hr>
     <h1>Posts</h1>
     {% for post in all_posts %}
-    <h2>{{post.title}} {{post.author}}</h2><a href="{{url_for('delete_post', post_id=post.id) }}">✘</a>
+    <h2>{{post.title}} {{post.author.name}}</h2><a href="{{url_for('delete_post', post_id=post.id) }}">✘</a>
     {% endfor %}
     <hr>
     <h1>Comments</h1>
