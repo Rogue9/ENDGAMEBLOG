@@ -19,17 +19,17 @@
   <div class="container">
   <h1>Users</h1>
     {% for user in all_users %}
-    <h2>{{user.email}} {{user.name}} </h2><a href="{{url_for('delete_user', user_id=user.id)}}">✘</a>
+    <p>{{user.email}} {{user.name}} </p><a href="{{url_for('delete_user', user_id=user.id)}}">✘</a>
     {% endfor %}
     <hr>
     <h1>Posts</h1>
     {% for post in all_posts %}
-    <h2>{{post.title}} {{post.author.name}}</h2><a href="{{url_for('delete_post', post_id=post.id) }}">✘</a>
+    <p>{{post.title}} {{post.author.name}}</p><a href="{{url_for('delete_post', post_id=post.id) }}">✘</a>
     {% endfor %}
     <hr>
     <h1>Comments</h1>
     {% for comment in all_comments %}
-    <h2>{{comment.parent_post.title}} - {{comment.text}}</h2><a href="{{url_for('delete_comment', comment_id=comment.id) }}">✘</a>
+    <p>{{comment.parent_post.title}} - {{comment.text}}</p><a href="{{url_for('delete_comment', comment_id=comment.id) }}">✘</a>
     {% endfor %}
   </div>
   <hr>
