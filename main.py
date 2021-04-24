@@ -107,8 +107,8 @@ def register():
             salt_length=8
         )
         new_user = User(
-            email=form.email.data,
-            name=form.name.data,
+            email=form.email.data.lower(),
+            name=form.name.data.title(),
             password=hash_and_salted_password,
         )
         db.session.add(new_user)
@@ -131,7 +131,7 @@ def load_user(user_id):
 def login():
     form = LoginForm()
     if form.validate_on_submit():
-        email= form.email.data
+        email= form.email.data.lower()
         password= form.password.data
         user= User.query.filter_by(email=email).first()
         if not user:
