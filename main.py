@@ -269,5 +269,11 @@ def delete_user(user_id):
     db.session.commit()
     return redirect(url_for('get_all_posts', current_user=current_user))
 
+@app.route("/admin")
+@login_required
+@admin_only
+def admin_panel():
+    pass
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
