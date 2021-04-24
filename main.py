@@ -260,7 +260,7 @@ def delete_post(post_id):
     db.session.commit()
     return redirect(url_for('get_all_posts', current_user=current_user))
 
-@app.route("/admin")
+@app.route("/user_purge/<int:user_id>")
 @login_required
 @admin_only
 def delete_user(user_id):
