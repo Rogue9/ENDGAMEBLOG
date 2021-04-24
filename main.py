@@ -204,7 +204,6 @@ def send_email(name, email, message):
 
 
 @app.route("/new-post", methods=["GET", "POST"])
-@admin_only
 def add_new_post():
     form = CreatePostForm(
         img_url="https://images.unsplash.com/photo-1619075120066-02024cb853bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
@@ -264,8 +263,17 @@ def delete_post(post_id):
 @login_required
 @admin_only
 def delete_user(user_id):
-    user_to_delete = Comment.query.get(user_id)
+    user_to_delete = User.query.get(user_id)
     db.session.delete(user_to_delete)
+    db.session.commit()
+    return redirect(url_for('get_all_posts', current_user=current_user))
+
+@app.route("/comment_purge/<int:comment_id>")
+@login_required
+@admin_only
+def delete_comment(comment_id):
+    comment_to_delete = Comment.query.get(comment_id)
+    db.session.delete(comment_to_delete)
     db.session.commit()
     return redirect(url_for('get_all_posts', current_user=current_user))
 
@@ -273,7 +281,10 @@ def delete_user(user_id):
 @login_required
 @admin_only
 def admin_panel():
-    pass
+    users = User.query.all()
+    posts = BlogPost.query.all()
+    comments = Comment.query.all()
+    return render_template("admin.html", all_posts=posts, all_users=users, all_comments=comments, current_user=current_user)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
