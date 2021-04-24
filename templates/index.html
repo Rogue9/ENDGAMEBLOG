@@ -46,7 +46,7 @@
 
         <!-- New Post -->
         <div class="clearfix">
-           {% if current_user.id == 1: %}
+           {% if current_user.id == 1 or current_user.id == 2: %}
           <a class="btn btn-dark float-right" href="{{url_for('add_new_post')}}">Create New Post</a>
           {%endif%}
         </div>
