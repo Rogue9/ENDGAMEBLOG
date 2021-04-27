@@ -85,7 +85,7 @@ p {
 }
 @media (orientation: landscape) and (min-width: 990px) {
   .container {
-    padding-top: 1vh;
+    padding-top: 21vh;
   }
 }
 @media (orientation:portrait) and (min-width: 768px) {
@@ -104,7 +104,7 @@ p {
     font-size: 1rem;
   }
 }
-@media (orientation:landscape) and (min-width: 600px) {
+@media (orientation:landscape) and (min-width: 992px) {
   .container {
     padding-top: 2vh;
   }
