@@ -286,5 +286,11 @@ def admin_panel():
     comments = Comment.query.all()
     return render_template("admin.html", all_posts=posts, all_users=users, all_comments=comments, current_user=current_user)
 
+
+@app.route("/name-card")
+def name_card():
+    return render_template("card.html")
+
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
