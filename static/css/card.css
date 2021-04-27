@@ -109,3 +109,15 @@ p {
     padding-top: 2vh;
   }
 }
+<!-- because iphone -->
+@media (max-height: 400px) {
+  .container {
+    padding-top: 1vh;
+  }
+ .name {
+    font-size: 50px;
+  }
+  .description {
+    font-size: 20px;
+  }
+}
