@@ -4,13 +4,13 @@ body {
 
 }
 h1 {
-  font-size: 3rem;
+  font-size: 70px;
   font-family: 'Orelega One', serif;
   letter-spacing: 3px;
   text-shadow: 2px 2px #98ded9;
 }
 p {
-  font-size: 1.5rem;
+  font-size: 15px;
   font-family: 'Josefin Sans', sans-serif;
   text-shadow: 1px 1px #98ded9;
 }
@@ -85,26 +85,26 @@ p {
 }
 @media (orientation: landscape) and (min-width: 990px) {
   .container {
-    padding-top: 21vh;
+    padding-top: 1vh;
   }
 }
 @media (orientation:portrait) and (min-width: 768px) {
   .name {
-    font-size: 2rem;
+    font-size: 120px;
   }
   .description {
-    font-size: 1rem;
+    font-size: 25px;
   }
 }
 @media (min-width: 992px) {
   .name {
-    font-size: 2rem;
+    font-size: 120px;
   }
   .description {
-    font-size: 1rem;
+    font-size: 25px;
   }
 }
-@media (orientation:landscape) and (min-width: 992px) {
+@media (orientation:landscape) and (min-width: 600px) {
   .container {
     padding-top: 2vh;
   }
@@ -114,10 +114,12 @@ p {
     padding-top: 1vh;
   }
  .name {
-    font-size: 1.3rem;
+    font-size: 50px;
   }
   .description {
-    font-size: 1rem;
+    font-size: 20px;
   }
-
+  .footer {
+  position: relative;
+}
 }
