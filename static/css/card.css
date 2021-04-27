@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  max-height: 100vh;
+
+}
+h1 {
+  font-size: 70px;
+  font-family: 'Orelega One', serif;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px #98ded9;
+}
+p {
+  font-size: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-shadow: 1px 1px #98ded9;
+}
+
+
+.container{
+  margin-top: auto;
+  padding-top: 21vh;
+  overflow: hidden;
+  color: #161d6f;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+
+.scrolling {
+  background-image: url("images/bggreenlight.png");
+  background-repeat: repeat-x;
+  background-size: auto, cover;
+  height: 100%;
+  background-position: bottom;
+  width: 4500px;
+  animation: slide 60s linear infinite;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+
+}
+
+ul li {
+display: inline;}
+
+
+footer {
+  bottom: 1%;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  color: #161d6f;
+  font-family: 'Orelega One', cursive;
+}
+footer i {
+  font-size: 3em;
+  padding-right: 1em;
+
+}
+
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1500px, 0, 0);
+  }
+}
+@media only screen and (min-width: 600px) {
+.container {
+  padding-top: 2vh;
+}
+p {
+  font-size: 20px;
+}
+}
+@media only screen and (min-width:768px) {
+  .container {
+    padding-top: 21vh;
+  }
+}
+@media (orientation:portrait) and (min-width: 768px) {
+  .name {
+    font-size: 120px;
+  }
+  .description {
+    font-size: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .name {
+    font-size: 120px;
+  }
+  .description {
+    font-size: 25px;
+  }
+}
+@media (orientation:landscape) and (min-width: 600px) {
+  .container {
+    padding-top: 21vh;
+  }
+}
