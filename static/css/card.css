@@ -4,13 +4,13 @@ body {
 
 }
 h1 {
-  font-size: 70px;
+  font-size: 3rem;
   font-family: 'Orelega One', serif;
   letter-spacing: 3px;
   text-shadow: 2px 2px #98ded9;
 }
 p {
-  font-size: 15px;
+  font-size: 1.5rem;
   font-family: 'Josefin Sans', sans-serif;
   text-shadow: 1px 1px #98ded9;
 }
@@ -90,18 +90,18 @@ p {
 }
 @media (orientation:portrait) and (min-width: 768px) {
   .name {
-    font-size: 120px;
+    font-size: 2rem;
   }
   .description {
-    font-size: 25px;
+    font-size: 1rem;
   }
 }
 @media (min-width: 992px) {
   .name {
-    font-size: 120px;
+    font-size: 2rem;
   }
   .description {
-    font-size: 25px;
+    font-size: 1rem;
   }
 }
 @media (orientation:landscape) and (min-width: 600px) {
@@ -119,7 +119,5 @@ p {
   .description {
     font-size: 20px;
   }
-  .footer {
-  position: relative;
-}
+
 }
