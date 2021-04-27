@@ -28,7 +28,7 @@ p {
 
 
 .scrolling {
-  background-image: url("images/bggreenlight.png");
+  background-image: url("static/img/bggreenlight.png");
   background-repeat: repeat-x;
   background-size: auto, cover;
   height: 100%;
