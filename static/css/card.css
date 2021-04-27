@@ -80,7 +80,12 @@ p {
 }
 @media only screen and (min-width:768px) {
   .container {
-    padding-top: 21vh;
+    padding-top: 2vh;
+  }
+}
+@media (orientation: landscape) and (min-width: 990px) {
+  .container {
+    padding-top: 1vh;
   }
 }
 @media (orientation:portrait) and (min-width: 768px) {
@@ -101,6 +106,6 @@ p {
 }
 @media (orientation:landscape) and (min-width: 600px) {
   .container {
-    padding-top: 21vh;
+    padding-top: 2vh;
   }
 }
