@@ -119,5 +119,7 @@ p {
   .description {
     font-size: 20px;
   }
-
+  .footer {
+  position: relative;
+}
 }
