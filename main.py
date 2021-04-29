@@ -66,7 +66,7 @@ class Campaign(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     group_name=db.Column(db.String(100))
     setting=db.Column(db.String(100), nullable=False)
-db.create_all()
+#db.create_all()
 
 gravatar = Gravatar(app,
                     size=100,
@@ -92,7 +92,7 @@ portfolio_entries = {1: {"title": "Adventurer's Journal",
                      4: {"title": "TinDice",
                          "pic":"tindice.png",
                          "link":"https://Rogue9.github.io",
-                         "description":"A landing page for a Tinder clone that finds ttRPG players instead of dates."}
+                         "description":"A landing page for a Tinder clone that finds ttRPG players instead of dates."}}
 
 
 def admin_only(f):
@@ -314,4 +314,4 @@ def portfolio():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='127.0.0.1', port=5000)
