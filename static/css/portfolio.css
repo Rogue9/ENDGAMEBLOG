@@ -1,0 +1,254 @@
+body {
+  margin:0;
+  padding: 0;
+  background-color: #FFA700;
+  }
+h1,h2,h3,h5 {
+  font-family: 'Abril Fatface', serif;
+  color: #161D6F;
+  text-shadow: 1px 1px #98ded9;
+  line-height: 1.5em;
+}
+p {
+  font-family: 'Zen Dots', sans-serif;
+  color: #161D6F;
+  padding-top: 1em;
+}
+a {
+  color: #000000;
+}
+a:visited {
+  color:#4F4F4F;
+}
+.navbar-light {
+  font-family: 'Zen Dots', sans-serif;
+  background-color: #98DED9;
+  color: black;
+  position: fixed;
+  width: 100%;
+}
+.navbar li {
+  padding-left: 2em;
+}
+.page {
+  min-height: 100%;
+}
+.welcome {
+  background-color: #FFA700;
+  background-image: url('images/flower.png');
+  background-size: cover;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  overflow: hidden;
+  height: 98vh;
+}
+
+.headshot {
+  flex-shrink: 2;
+  padding:3em 5em;
+}
+.headshot img {
+  height:15em;
+  width:auto;
+}
+.intro {
+  background-image: radial-gradient(#ffa700, #ffa701);
+
+  background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+padding: 3em 2em 0;
+border-radius: 20% 3% 20% 3%;
+}
+.intro-copy {
+  background-image: url("images/introbg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  text-align: center;
+  padding-top: 4%;
+  text-shadow: 1px 1px #98DED9;
+}
+.portfolio {
+  width: 100%;
+  background-color: #FFA700;
+  padding: 0 0 0;
+  align-items: center;
+  border: .5em double #1616df;
+  background-image: url('images/portfoliobg.jpg');
+  background-size: cover;
+}
+.portfolio-header {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding: 3em 0 1em;
+  background-color: #ffa700;
+
+}
+.portfolio-headline {
+  width: 20%;
+  margin: auto;
+  border:3px solid #98ded9;
+  border-radius: 10% 10% 100% 100%;
+}
+.card-row {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+}
+.flip-card {
+  background-color: transparent;
+  height: 20rem;
+  perspective: 1000px;
+  padding: 1em 3em 0;
+  margin: 2em 2em 1em;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #161d6f;
+  color: black;
+  justify-content: center;
+  align-content: center;
+
+
+}
+
+.flip-card-front img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.flip-card-back {
+  background-color: #98ded9;
+  color: #161d6f;
+  transform: rotateY(180deg);
+  align-items: center;
+}
+.flip-card-back p{
+  padding: 4em 7em 0;
+  line-height: 2.5;
+}
+.about {
+  background-color: #FFA700;
+  margin: 0;
+  padding: 4em 1em 2em;
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+
+}
+
+.about-row {
+  padding: 4em 10em 4em;
+  margin-bottom: 5em;
+  width: 100%;
+  min-height: 30%;
+}
+
+.about-section-1, .about-section-3 {
+  background-image: url('images/bgright.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+      padding-top: 1em;
+        background-color: #ffa700;
+  letter-spacing: .2rem;
+    border: .5em solid #1616df;
+    border-radius: 25% 5% 25% 5%;
+}
+
+
+.about-section-2 {
+  background-image: url('images/bgleft.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding-top: 1em;
+  background-color: #ffa700;
+  letter-spacing: .2rem;
+    border: .5em solid #1616df;
+    border-radius: 5% 25% 5% 25%;
+}
+
+.contact {
+  background-color: #98ded9;
+  text-align: center;
+  text-shadow: 1px 1px #ffa700;
+  height: 2vh;
+}
+.cta {
+  background-color: #98ded9;
+  padding: 3em 10em 4em;
+  line-height: 4;
+}
+.cta h1 {
+  text-shadow: 1px 1px #ffa700;
+  padding-bottom: 2em;
+  color: #161d6f;
+}
+.contact-bar {
+  background-color: #98ded9;
+}
+.contact-icons ul {
+  background-color: #98ded9;
+  padding-bottom: 3em;
+}
+.contact-icons li{
+  display: inline;
+}
+.contact-icons i {
+  font-size: 3em;
+  padding: 1em 1.5em 1em;
+  bottom: 0;
+  border: solid 1px #FFA700;
+}
+.pop {
+  text-shadow: 1px 1px #ffa700;
+  font-size: 2.5rem;
+  color: #161d6f;
+}
+@media (min-width:992px) {
+  .intro-copy {
+    text-align: right;
+  }
+}
+@media (min-width: 1288px) {
+  .flip-card {
+    width: 40%;
+  }
+}

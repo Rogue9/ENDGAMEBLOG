@@ -77,6 +77,23 @@ gravatar = Gravatar(app,
                     use_ssl=False,
                     base_url=None)
 
+portfolio_entries = {1: {"title": "Adventurer's Journal",
+                         "pic":"adventurers-journal.png",
+                         "link":"https://adventurers-journal.herokuapp.com/",
+                         "description":"A blog for Dungeons and Dragons players to roleplay favorite characters."},
+                     2: {"title": "Name Card",
+                         "pic": "name-card.png",
+                         "link": "https://adventurers-journal.herokuapp.com/name-card",
+                         "description": "A personal landing page with contact links."},
+                     3: {"title": "Python Portfolio",
+                         "pic":"python-portfolio.png",
+                         "link":"https://github.com/Rogue9/PythonPortfolio",
+                         "description":"A repository of projects solo-coded in Python."},
+                     4: {"title": "TinDice",
+                         "pic":"tindice.png",
+                         "link":"https://Rogue9.github.io",
+                         "description":"A landing page for a Tinder clone that finds ttRPG players instead of dates."}
+
 
 def admin_only(f):
     @wraps(f)
@@ -290,6 +307,10 @@ def admin_panel():
 @app.route("/name-card")
 def name_card():
     return render_template("card.html")
+
+@app.route("/portfolio")
+def portfolio():
+    return render_template("portfolio.html", all_sites=portfolio_entries)
 
 
 if __name__ == "__main__":
