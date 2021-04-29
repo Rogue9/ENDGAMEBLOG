@@ -83,6 +83,7 @@ border-radius: 20% 3% 20% 3%;
   border: .5em double #1616df;
   background-image: url('../img/portfoliobg.jpg');
   background-size: cover;
+  text-align: center;
 }
 .portfolio-header {
   width: 100%;
@@ -209,7 +210,6 @@ border-radius: 20% 3% 20% 3%;
   background-color: #98ded9;
   text-align: center;
   text-shadow: 1px 1px #ffa700;
-  height: 2vh;
 }
 .cta {
   background-color: #98ded9;
