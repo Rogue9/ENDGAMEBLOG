@@ -35,7 +35,7 @@ a:visited {
 }
 .welcome {
   background-color: #FFA700;
-  background-image: url('../images/flower.png');
+  background-image: url('../img/flower.png');
   background-size: cover;
   margin: 0;
   display: inline-flex;
@@ -67,7 +67,7 @@ padding: 3em 2em 0;
 border-radius: 20% 3% 20% 3%;
 }
 .intro-copy {
-  background-image: url("../images/introbg.png");
+  background-image: url("../img/introbg.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
@@ -81,7 +81,7 @@ border-radius: 20% 3% 20% 3%;
   padding: 0 0 0;
   align-items: center;
   border: .5em double #1616df;
-  background-image: url('../images/portfoliobg.jpg');
+  background-image: url('../img/portfoliobg.jpg');
   background-size: cover;
 }
 .portfolio-header {
@@ -181,7 +181,7 @@ border-radius: 20% 3% 20% 3%;
 }
 
 .about-section-1, .about-section-3 {
-  background-image: url('../images/bgright.png');
+  background-image: url('../img/bgright.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -194,7 +194,7 @@ border-radius: 20% 3% 20% 3%;
 
 
 .about-section-2 {
-  background-image: url('../images/bgleft.png');
+  background-image: url('../img/bgleft.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
