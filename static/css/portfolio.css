@@ -78,7 +78,7 @@ border-radius: 20% 3% 20% 3%;
 .portfolio {
   width: 100%;
   background-color: #FFA700;
-  padding: 0 0 0;
+  height: 120vh;
   align-items: center;
   border: .5em double #1616df;
   background-image: url('../img/portfoliobg.jpg');
