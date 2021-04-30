@@ -3,7 +3,7 @@ body {
   padding: 0;
   background-color: #FFA700;
   }
-h1,h2,h3,h5 {
+h1,h2,h3 {
   font-family: 'Abril Fatface', serif;
   color: #161D6F;
   text-shadow: 1px 1px #98ded9;
@@ -115,6 +115,8 @@ border-radius: 20% 3% 20% 3%;
 
 .about h5 {
   font-family: 'Marvel', sans-serif;
+    color: #161D6F;
+}
 .about-row {
   padding: 4em 2em 4em;
   margin-bottom: 5em;
