@@ -90,7 +90,7 @@
       <h1>This site!</h1>
       <p>This portfolio site</p>
     </div>
-    {% for site in all_sites %}
+    {% for site in all_sites.values() %}
     <div class="carousel-item">
       <img class="d-block w-100" src="{{url_for('static', filename='../static/img/site["pic"]')}}" alt="{{site["title"]}}">
       <h1><a href="{{site["link"]}}" target="_blank">{{site["title"]}}</a></h1>
