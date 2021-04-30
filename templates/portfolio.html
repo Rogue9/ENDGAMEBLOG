@@ -90,15 +90,34 @@
       <div class="carousel-caption><h1>This site!</h1>
                   <p>This portfolio site</p></div>
     </div>
-    {% for site in all_sites %}
     <div class="carousel-item">
-      <img class="d-block w-100" src="{{url_for('static', filename='../static/img/site.pic')}}" alt="{{all_sites[site]["title"]}}">
+      <img class="d-block w-100" src="{{url_for('static', filename='../static/img/adventurers-journal.png')}}" alt="Adventurer's Journal">
       <div class="carousel-caption>
-      <h1><a href="{{all_sites[site]["link"]}}" target="_blank">{{all_sites[site]["title"]}}</a></h1>
-      <p>{{all_sites[site]["description"]}}</p>
+      <h1><a href="https://adventurers-journal.herokuapp.com/" target="_blank">Adventurer's Journal</a></h1>
+      <p>A blog for Dungeons and Dragons players to roleplay favorite characters.</p>
                              </div>
     </div>
-    {% endfor %}
+      <div class="carousel-item">
+      <img class="d-block w-100" src="{{url_for('static', filename='../static/img/name-card.png')}}" alt="Name Card">
+      <div class="carousel-caption>
+      <h1><a href="https://adventurers-journal.herokuapp.com/name-card" target="_blank">Name Card</a></h1>
+      <p>A personal landing page with contact links.</p>
+                             </div>
+    </div>
+                                                                                             <div class="carousel-item">
+      <img class="d-block w-100" src="{{url_for('static', filename='../static/img/tindice.png')}}" alt="TinDice">
+      <div class="carousel-caption>
+      <h1><a href="https://Rogue9.github.io" target="_blank">TinDice</a></h1>
+      <p>A landing page for a Tinder clone that finds ttRPG players instead of dates.</p>
+                             </div>
+    </div>
+            <div class="carousel-item">
+      <img class="d-block w-100" src="{{url_for('static', filename='../static/img/python-portfolio.png')}}" alt="Python Portfolio">
+      <div class="carousel-caption>
+      <h1><a href="https://github.com/Rogue9/PythonPortfolio" target="_blank">Python Portfolio</a></h1>
+      <p>A repository of projects solo-coded in Python.</p>
+                             </div>
+    </div>
   </div>
   <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
