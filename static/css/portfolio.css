@@ -111,9 +111,10 @@ border-radius: 20% 3% 20% 3%;
   justify-content: center;
   flex-wrap: wrap;
   align-content: center;
-
 }
 
+.about h5 {
+  font-family: 'Marvel', sans-serif;
 .about-row {
   padding: 4em 2em 4em;
   margin-bottom: 5em;
