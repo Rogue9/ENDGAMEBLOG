@@ -92,7 +92,7 @@
     </div>
     {% for site in all_sites %}
     <div class="carousel-item">
-      <img class="d-block w-100" src="{{url_for('static', filename='../static/img/all_sites[site]['pic'])}}" alt="{{all_sites[site]["title"]}}">
+      <img class="d-block w-100" src="{{url_for('static', filename='../static/img/site.pic)}}" alt="{{all_sites[site]["title"]}}">
       <div class="carousel-caption>
       <h1><a href="{{all_sites[site]["link"]}}" target="_blank">{{all_sites[site]["title"]}}</a></h1>
       <p>{{all_sites[site]["description"]}}</p>
