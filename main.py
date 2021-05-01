@@ -77,22 +77,22 @@ gravatar = Gravatar(app,
                     use_ssl=False,
                     base_url=None)
 
-portfolio_entries = {1: {"title": "Adventurer's Journal",
+portfolio_entries = [{"title": "Adventurer's Journal",
                          "pic":"adventurers-journal.png",
                          "link":"https://adventurers-journal.herokuapp.com/",
                          "description":"A blog for Dungeons and Dragons players to roleplay favorite characters."},
-                     2: {"title": "Name Card",
+                     {"title": "Name Card",
                          "pic": "name-card.png",
                          "link": "https://adventurers-journal.herokuapp.com/name-card",
                          "description": "A personal landing page with contact links."},
-                     3: {"title": "Python Portfolio",
+                     {"title": "Python Portfolio",
                          "pic":"python-portfolio.png",
                          "link":"https://github.com/Rogue9/PythonPortfolio",
                          "description":"A repository of projects solo-coded in Python."},
-                     4: {"title": "TinDice",
+                     {"title": "TinDice",
                          "pic":"tindice.png",
                          "link":"https://Rogue9.github.io",
-                         "description":"A landing page for a Tinder clone that finds ttRPG players instead of dates."}}
+                         "description":"A landing page for a Tinder clone that finds ttRPG players instead of dates."}]
 
 
 def admin_only(f):
