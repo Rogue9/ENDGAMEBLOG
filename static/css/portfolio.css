@@ -96,10 +96,9 @@ border-radius: 20% 3% 20% 3%;
   width: 20%;
   padding: 1em 0 4em;
   margin: auto;
-  border:3px solid #98ded9;
-  border-radius: 10% 10% 100% 100%;
+
 }
-.card-inner {
+.spinaroonie {
   width: 80%;
   background-color: #98ded9;
   padding: 2em 0 4em;
@@ -127,12 +126,12 @@ border-radius: 20% 3% 20% 3%;
   align-content: center;
 }
 
-.about h5 {
+.about {
   font-family: 'Marvel', sans-serif;
     color: #161D6F;
 }
 .about-row {
-  padding: 4em 2em 4em;
+  padding: 4em 0 4em;
   margin-bottom: 5em;
   width: 100%;
   min-height: 30%;
@@ -173,7 +172,7 @@ border-radius: 20% 3% 20% 3%;
   padding: 3em 0 4em;
   line-height: 4;
 }
-.cta h1 {
+.tagline {
   text-shadow: 1px 1px #ffa700;
   padding-bottom: 2em;
   color: #161d6f;
@@ -203,6 +202,10 @@ border-radius: 20% 3% 20% 3%;
 @media (min-width:992px) {
   .intro-copy {
     text-align: right;
+  }
+  .portfolio-headline {
+    border:3px solid #98ded9;
+    border-radius: 10% 10% 100% 100%;
   }
 }
 @media (min-width: 1288px) {
