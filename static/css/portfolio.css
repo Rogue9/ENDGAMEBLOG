@@ -78,7 +78,6 @@ border-radius: 20% 3% 20% 3%;
 .portfolio {
   width: 100%;
   background-color: #FFA700;
-  height: 120vh;
   align-items: center;
   border: .5em double #1616df;
   background-image: url('../img/portfoliobg.jpg');
@@ -95,11 +94,14 @@ border-radius: 20% 3% 20% 3%;
 }
 .portfolio-headline {
   width: 20%;
+  padding: 1em 0 4em;
   margin: auto;
   border:3px solid #98ded9;
   border-radius: 10% 10% 100% 100%;
 }
-
+.site-img {
+  width: 80%;
+  height: auto;
 .about {
   background-color: #FFA700;
   margin: 0;
