@@ -98,6 +98,9 @@ border-radius: 20% 3% 20% 3%;
   margin: auto;
 
 }
+.carousel-inner {
+  margin: auto;
+}
 .spinaroonie {
   width: 80%;
   background-color: #98ded9;
