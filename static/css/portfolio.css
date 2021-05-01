@@ -99,10 +99,10 @@ border-radius: 20% 3% 20% 3%;
 
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next, .carousel-control-prev button{
   background-color: #1616df80;
 }
-.carousel-indicators {
+.carousel-indicators button{
  background-color: #000;
 }
 .carousel-inner {
