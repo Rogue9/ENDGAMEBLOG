@@ -101,6 +101,8 @@ border-radius: 20% 3% 20% 3%;
 }
 .card-inner {
   width: 80%;
+  background-color: #98ded9;
+  padding: 2em 0 4em;
 }
 .card-headline {
   background-color: #98ded9;
@@ -169,7 +171,7 @@ border-radius: 20% 3% 20% 3%;
 }
 .cta {
   background-color: #98ded9;
-  padding: 3em 10em 4em;
+  padding: 3em 0 4em;
   line-height: 4;
 }
 .cta h1 {
@@ -207,5 +209,10 @@ border-radius: 20% 3% 20% 3%;
 @media (min-width: 1288px) {
   .flip-card {
     width: 40%;
+  }
+}
+@media (min-width: 628px) {
+  .cta {
+    padding: 3em 10em 4em;
   }
 }
