@@ -99,12 +99,10 @@ border-radius: 20% 3% 20% 3%;
 
 }
 
-.carousel-control-next, .carousel-control-prev button{
+.carousel-control-next, .carousel-control-prev {
   background-color: #1616df80;
 }
-.carousel-indicators button{
- background-color: #000;
-}
+
 .carousel-inner {
   margin: auto;
   padding-left: 17%;
@@ -210,6 +208,9 @@ border-radius: 20% 3% 20% 3%;
   text-shadow: 1px 1px #ffa700;
   font-size: 2.5rem;
   color: #161d6f;
+}
+.byline {
+  background-color: #98ded9;
 }
 @media (min-width:992px) {
   .intro-copy {
