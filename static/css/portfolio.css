@@ -26,6 +26,7 @@ a:visited {
   color: black;
   position: fixed;
   width: 100%;
+  z-index: 3;
 }
 .navbar li {
   padding-left: 2em;
