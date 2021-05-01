@@ -99,7 +99,7 @@ border-radius: 20% 3% 20% 3%;
   border:3px solid #98ded9;
   border-radius: 10% 10% 100% 100%;
 }
-.card-headline {
+.card-headline h1{
   background-color: #98ded9;
   padding: 2em 0 3em;
 }
