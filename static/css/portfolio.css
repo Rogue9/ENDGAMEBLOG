@@ -100,14 +100,14 @@ border-radius: 20% 3% 20% 3%;
 }
 
 .carousel-control-next, .carousel-control-prev {
-  background-color: #1616df;
+  background-color: #1616df80;
 }
 .carousel-indicators {
-  background-color: #1616df;
+ background-color: #000;
 }
 .carousel-inner {
   margin: auto;
-  padding-left: 10%;
+  padding-left: 17%;
 }
 .spinaroonie {
   width: 80%;
